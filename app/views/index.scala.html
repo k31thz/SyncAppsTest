@@ -1,0 +1,56 @@
+@()
+
+
+@main("Welcome") {
+@defining(play.core.PlayVersion.current) { version =>
+
+<div class="main-panel" id="main-panel">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-transparent  bg-primary  navbar-absolute">
+    <div class="container-fluid">
+      <div class="navbar-wrapper">
+        <div class="navbar-toggle">
+          <button type="button" class="navbar-toggler">
+            <span class="navbar-toggler-bar bar1"></span>
+            <span class="navbar-toggler-bar bar2"></span>
+            <span class="navbar-toggler-bar bar3"></span>
+          </button>
+        </div>
+        <a class="navbar-brand" href="#pablo">MailChimp Retriever</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-bar navbar-kebab"></span>
+        <span class="navbar-toggler-bar navbar-kebab"></span>
+        <span class="navbar-toggler-bar navbar-kebab"></span>
+      </button>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <div class="panel-header panel-header-sm">
+    <canvas id="Canvas"></canvas>
+  </div>
+  <div class="content">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-category">MailChimp</h5>
+            <h4 class="card-title">Retrieve Contacts using Mailchimp</h4>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              Tag :
+              <input type="input" id="tag">
+            </div>
+            <div>
+              <button type="submit" formmethod="post">Retrieve</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+}
+}
